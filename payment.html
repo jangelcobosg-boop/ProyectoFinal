@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perita Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.min.css
+" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <script defer src="js/index.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="home">
+        <div class="header__block flex-row">
+            <div class="header__column header__left">
+                <div class="menu__burguer" id="burger-menu">
+                    <span class="burguer__line"></span>
+                    <span class="burguer__line"></span>
+                    <span class="burguer__line"></span>
+                </div>
+
+                <nav class="header__nav">
+                    <ul>
+                        <li><a class="text--sm" href="index.html">Home</a></li>
+                        <li><a class="text--sm" href="services.html">Servicios</a></li>
+                        <li><a class="text--sm" href="about-us.html">Perita Team</a></li>
+                        <li><a class="text--sm" href="shop.html">Tienda</a></li>
+                        <li><a class="text--sm" href="contact.html">Contacto</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header__column  header__center">
+                <div class="header__logo">
+                    <a href="index.html"><img src="assets/Logos/Pertia Header White.png" alt="Perita Design Logo"></a>
+                </div>
+            </div>
+
+            <div class="header__column header__right">
+                <div class="header__shop">
+                    <a href="shop.html"><i class="ri-shopping-bag-line"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="menu__burguer__block  flex-column " id="mobile-menu">
+            <a class="text--md" href="index.html">Home</a>
+            <a class="text--md" href="services.html">Servicios</a>
+            <a class="text--md" href="about-us.html">Perita Team</a>
+            <a class="text--md" href="shop.html">Tienda</a>
+            <a class="text--md" href="contact.html">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- /HEADER -->
+    <main>
+        <!-- PAYMENT -->
+        <section class="payment section flex-column">
+            <div class="payment__block container">
+                <form id="payment__form" class="flex-column">
+                    <h2 class="text--md">Detalles de Pago</h2>
+
+                    <div class="payment__items">
+                        <label for="card-name">Nombre en la tarjeta</label>
+                        <input type="text" id="card-name" placeholder="Juan Pérez" required>
+                    </div>
+
+                    <div class="payment__items">
+                        <label for="card-number">Número de tarjeta</label>
+                        <input type="text" id="card-number" inputmode="numeric" placeholder="0000 0000 0000 0000"
+                            maxlength="19" required>
+                    </div>
+
+                    <div class="payment__group">
+                        <div class="payment__items">
+                            <label for="expiry">Expira (MM/AA)</label>
+                            <input type="text" id="expiry" placeholder="MM/AA" maxlength="5" required>
+                        </div>
+
+                        <div class="payment__items">
+                            <label for="cvc">CVC</label>
+                            <input type="text" id="cvc" inputmode="numeric" placeholder="123" maxlength="4" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="payment__btn"><a href="paycompleted.html">Pagar Ahora</a></button>
+
+                    <p class="payment__security text--sm"><i class="ri-lock-fill"></i> Pago seguro y encriptado</p>
+                </form>
+            </div>
+        </section>
+
+        <!-- /PAYMENT -->
+    </main>
+
+    <!--FOOTER -->
+    <footer class="flex-column">
+
+        <div class="footer_line"></div>
+
+        <div class="footer__info flex-row">
+
+            <div class="footer__logo">
+                <a href="index.html"><img src="assets/Logos/Pertia Header White.png" alt="Home"></a>
+            </div>
+
+            <div class="footer__return flex-column">
+                <h4 class="text--sm"><a href="index.html">Vuelve a tus diseños</a></h4>
+                <div class="footer__return__links flex-row">
+                    <a href="index.html">Home</a>
+                    <a href="aboutus.html" class="text--sm">Perita Team</a>
+                    <a href="services.html" class="text--sm">Servicios</a>
+                    <a href="subscription.html" class="text--sm">Suscripciones</a>
+                    <a href="contact.html" class="text--sm">Contacto</a>
+                </div>
+            </div>
+
+            <div class="footer__social flex-column">
+                <h4 class="text--sm">Síguenos en nuestras redes sociales</h4>
+                <div class="footer__social_rrss flex-row">
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-facebook-circle-line"></i></a>
+                    <a href="#"><i class="ri-twitter-x-line"></i></a>
+                    <a href="#"><i class="ri-tiktok-line"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </footer>
+    <!--/FOOTER -->
+</body>
+
+</html>
