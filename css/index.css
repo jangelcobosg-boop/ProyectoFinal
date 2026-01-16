@@ -91,9 +91,7 @@ h4 {
     font: var(--f-heading-sm);
 }
 
-.text-tittle {
-    font-family: "Bodoni Moda SC", serif;
-}
+
 
 .links {
     font: var(--f-links);
@@ -120,10 +118,6 @@ p {
     padding: 0 .5rem;
 }
 
-.btn--black {
-    color: var(--c-light);
-    background-color: var(--c-text);
-}
 
 
 .section {
@@ -149,18 +143,7 @@ p {
 
 }
 
-.text-block {
 
-    justify-content: center;
-    align-items: center;
-    gap: var(--s-lg);
-
-    & div {
-        flex: 1 0 0;
-
-    }
-
-}
 
 
 input,
@@ -190,8 +173,8 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 999;
-    transition: all 0.4s ease;
+    z-index: 100;
+    transition:  0.4s ease;
 }
 
 .header__block {
@@ -334,12 +317,22 @@ header.scrolled .header__logo img {
         gap: var(--s-md);
         text-align: center;
 
+
+
         & .banner__btn {
             padding: 1rem 3rem;
+            transition: .4s ease;
         }
     }
 }
 
+/*BANNER HOVER*/
+.banner__btn:hover {
+    background-color: var(--c-details);
+    color: var(--c-light);
+    transform: scale(1.2);
+
+}
 
 
 
@@ -363,6 +356,7 @@ header.scrolled .header__logo img {
 
         & .aboutus__btn {
             padding: 1rem 2rem;
+            transition: .4s ease;
         }
     }
 
@@ -377,6 +371,14 @@ header.scrolled .header__logo img {
         }
 
     }
+
+}
+
+/*ABOUT US HOVER*/
+.aboutus__btn:hover {
+    background-color: var(--c-details);
+    color: var(--c-light);
+    transform: scale(1.2);
 
 }
 
@@ -498,8 +500,17 @@ button {
     padding: .5rem 2rem;
     width: 30%;
     text-align: center;
+    transition: .4s ease;
 }
 
+/* SHOP HOVER */
+
+.shop__btn:hover{
+    background-color: var(--c-details);
+    color: var(--c-light);
+    transform: scale(1.2);
+    width: 20%;
+}
 
 
 
@@ -547,7 +558,7 @@ button {
 .prices__block {
     display: flex;
     background-image:
-        url(../assets/home/Banner\ Subs\ Freepik.jpg);
+        url(../assets/home/BannerCards.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -753,6 +764,13 @@ button {
     }
 }
 
+.contact__privacy {
+    & input {
+        width: auto;
+        
+    }
+}
+
 .contact__btn {
     display: none;
     width: 100%;
@@ -768,7 +786,14 @@ button {
     color: var(--c-light);
 
 }
+/* CONTACT HOVER*/
 
+.contact__btn__info:hover {
+        background-color: var(--c-details);
+        color: var(--c-light);
+        transform: scale(1.1);
+    
+}
 /* /CONTACT */
 
 /* FOOTER */
@@ -801,7 +826,7 @@ footer {
 
 
     & .footer__logo {
-        flex: 1 1 150px;
+        flex: 0 1 150px;
 
         img {
             max-width: 150px;
@@ -810,12 +835,17 @@ footer {
     }
 
     & .footer__return {
-        flex: 2 1 300px;
+        flex: 1 0 300px;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         gap: 1rem;
+
+        & a{
+            color: var(--c-light);
+            transition: .4s ease;
+        }
 
 
         .footer__return__links {
@@ -825,11 +855,12 @@ footer {
             justify-content: center;
 
 
-            a {
+            & a {
                 color: var(--c-light);
                 opacity: 0.6;
                 text-decoration: none;
                 font-size: 0.9rem;
+                transition: .4s ease;
 
                 &:hover {
                     opacity: 1;
@@ -858,6 +889,14 @@ footer {
     }
 }
 
+
+/* FOOTER HOVER */
+
+.footer__return{
+    & a:hover {
+        border-bottom: 1px solid var(--c-details);
+    }
+}
 
 /* /FOOTER */
 
@@ -1299,7 +1338,7 @@ input {
     padding: .5rem 1rem;
     border: 2px solid var(--c-primary);
     border-radius: var(--r-sm);
-    transition: all 0.3s ease;
+    transition:  0.3s ease;
 
 }
 
@@ -1716,7 +1755,7 @@ input:focus {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     border-radius: var(--r-sm);
     padding: 1.5rem;
-    z-index: 1000;
+    z-index: 100;
 }
 
 .cart__dropdown.show {
